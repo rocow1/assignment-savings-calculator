@@ -9,5 +9,31 @@
   <script type="text/javascript" src="main.js" ></script>
 </head>
 <body>
+  <h3>Savings Calculator</h3>
+  <p>
+    Starting amount:  <input type="number" id="amount"/> 
+  </p>
+  <p>
+    Rate of return (percent):  <input type="number" id="rate" />
+  </p>
+  <p>
+    Years:   <input type="number" id="years"/>
+  </p>
+  <input type="button" value="Calculate" onclick="calculate();">
+  <input type="button" value="Reset" onclick="reset();">
+  <p id="results_table"> 
+  </p>
 </body>
+<script>
+  //script below was used to restrict input to numbers
+  //found on https://stackoverflow.com/questions/7295843/allow-only-numbers-to-be-typed-in-a-textbox
+  //function isNumber(evt) {
+   // evt = (evt) ? evt : window.event;
+    //var charCode = (evt.which) ? evt.which : evt.keyCode;
+    //if (charCode > 31 && (charCode < 48 || charCode > 57)) {
+    //    return false;
+   // }
+    //return true;
+//}
+</script>
 </html>
